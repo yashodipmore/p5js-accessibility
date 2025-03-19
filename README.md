@@ -10,7 +10,7 @@ This project aims to improve accessibility testing and implementation for the p5
 - Component examples with accessibility best practices
 
 ### **Outout)**
-![Formatting](Screenshots/bold.png)
+![Formatting](p5 js op.png)
 
 ## Getting Started
 
