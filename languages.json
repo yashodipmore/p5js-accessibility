@@ -1,0 +1,32 @@
+{
+    "en": {
+        "title": "Accessible File Manager",
+        "uploadFile": "📤 Upload File",
+        "dropZone": "Drag & Drop Files Here",
+        "uploadedFiles": "Uploaded Files",
+        "rename": "✏ Rename",
+        "delete": "❌ Delete",
+        "download": "📥 Download",
+        "themeToggle": "🌙 Toggle Dark Mode"
+    },
+    "hi": {
+        "title": "सुलभ फ़ाइल प्रबंधक",
+        "uploadFile": "📤 फ़ाइल अपलोड करें",
+        "dropZone": "फाइलें यहाँ खींचें और छोड़ें",
+        "uploadedFiles": "अपलोड की गई फाइलें",
+        "rename": "✏ नाम बदलें",
+        "delete": "❌ हटाएं",
+        "download": "📥 डाउनलोड करें",
+        "themeToggle": "🌙 डार्क मोड टॉगल करें"
+    },
+    "es": {
+        "title": "Administrador de archivos accesible",
+        "uploadFile": "📤 Subir archivo",
+        "dropZone": "Arrastra y suelta archivos aquí",
+        "uploadedFiles": "Archivos subidos",
+        "rename": "✏ Renombrar",
+        "delete": "❌ Eliminar",
+        "download": "📥 Descargar",
+        "themeToggle": "🌙 Alternar modo oscuro"
+    }
+}

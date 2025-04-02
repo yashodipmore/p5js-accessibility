@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Accessible File Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-all">
+    <header class="flex justify-between items-center p-4 bg-blue-600 text-white shadow-md">
+        <div class="flex items-center gap-4">
+            <h1 class="text-2xl font-extrabold transition hover:scale-105 hover:text-yellow-300">Accessible File Manager</h1>
+        </div>
+        <div class="flex items-center gap-4">
+            <button id="themeToggle" class="p-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition">🌙 Toggle Dark Mode</button>
+            <select id="languageSelect" aria-label="Select Language" class="p-2 rounded-md bg-gray-200 dark:bg-gray-800">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+    </header>
+    
+    <div class="controls flex justify-between p-4">
+        <button id="refreshBtn" class="p-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition">🔄 Refresh</button>
+        <button id="clearFiles" class="p-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition">🗑 Clear All Files</button>
+        <input type="text" id="searchBox" placeholder="Search files..." aria-label="Search Files" class="p-2 rounded-md border border-gray-300">
+    </div>
+    
+    <div id="dropZone" class="drop-zone p-6 border-dashed border-2 border-gray-400 text-center hover:border-gray-600 transition" aria-label="Drop files here">
+        Drag & Drop Files Here
+    </div>
+    
+    <div class="file-manager p-4" role="tree" aria-label="File Manager">
+        <button id="uploadBtn" class="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">📤 Upload File</button>
+        <ul id="fileList" role="tree" class="mt-4 space-y-2">
+            <li role="treeitem" tabindex="0" data-filename="index.html" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 transition">📄 index.html</li>
+            <li role="treeitem" tabindex="0" data-filename="styles.css" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 transition">🎨 styles.css</li>
+            <li role="treeitem" tabindex="0" data-filename="script.js" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 transition">⚙️ script.js</li>
+        </ul>
+    </div>
+    
+    <div class="upload-container p-4">
+        <input type="file" id="fileInput" multiple hidden />
+
+    </div>
+    
+    <div id="contextMenu" class="context-menu absolute hidden bg-white shadow-lg rounded-md p-2">
+        <ul class="space-y-1">
+            <li id="previewFile" class="p-2 hover:bg-gray-200 cursor-pointer">👀 Preview</li>
+            <li id="renameFile" class="p-2 hover:bg-gray-200 cursor-pointer">✏ Rename</li>
+            <li id="deleteFile" class="p-2 hover:bg-gray-200 cursor-pointer">❌ Delete</li>
+            <li id="downloadFile" class="p-2 hover:bg-gray-200 cursor-pointer">📥 Download</li>
+            <li id="moveFile" class="p-2 hover:bg-gray-200 cursor-pointer">📂 Move to Folder</li>
+        </ul>
+    </div>
+
+    <div id="fileModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-md w-2/3">
+            <h2 class="text-xl font-bold mb-2" id="modalTitle">File Preview</h2>
+            <textarea id="fileContent" class="w-full h-60 p-2 border"></textarea>
+            <div class="flex justify-end gap-4 mt-2">
+                <button id="saveFile" class="p-2 bg-green-500 text-white rounded-md">💾 Save</button>
+                <button id="closeModal" class="p-2 bg-gray-500 text-white rounded-md">❌ Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="p-4 text-center bg-blue-600 text-white mt-6">
+        <p>Made by Yashodip More | <a href="https://github.com/yashodipmore" class="underline">GitHub</a> | <a href="https://www.linkedin.com/in/yashodipmore22/" class="underline">LinkedIn</a> | Powered by <span class="font-bold">p5.js</span></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
