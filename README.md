@@ -1,38 +1,56 @@
-# P5.js Editor Accessibility Tools
+# Interactive Accessible File Manager
 
-This project aims to improve accessibility testing and implementation for the p5.js Editor by providing tools and examples for contributors.
+This mini-project is designed to explore and experiment with **p5.js** while understanding its capabilities in UI interactivity and animations. This is **not a full-fledged file manager**, but rather a learning project to engage with **p5.js** and gain a deeper understanding of how it works.
 
-## Features
+## 🛠 Features
+- 🌙 **Dark Mode Toggle** – Switch between light and dark themes.
+- 🌍 **Multilingual Support** – Users can switch between English, Hindi, and Spanish.
+- 📂 **Drag & Drop File Uploads** – Drop files into the UI for a simulated upload.
+- 🎨 **Animated UI Elements** – Smooth transitions and hover effects.
+- 🔍 **File Search Bar** – Quickly find files from the list.
+- 🖱 **Right-Click Context Menu** – Includes preview, rename, delete, download, and move options.
+- 📤 **Upload Simulation** – Users can simulate file uploads.
+- 🗑 **Clear All Files** – Reset the file list easily.
+- 💾 **File Preview & Edit** – Open and modify file content in a modal.
+- 🚀 **Responsive & Accessible Design** – Fully mobile-friendly and accessible.
 
-- ARIA role implementation examples
-- Screen reader testing utilities
-- Manual accessibility testing guides
-- Component examples with accessibility best practices
+## 🚀 Technologies Used
+- **HTML, CSS, JavaScript** – Core web technologies for building the interface.
+- **Tailwind CSS** – For styling and responsiveness.
+- **p5.js** – For interactive elements and animations.
 
-### **Outout)**
-![Formatting](p5 js op.png)
-
-## Getting Started
-
-1. Install dependencies:
+## 📂 Project Structure
 ```bash
-npm install
+📦 interactive-file-manager
+ ┣ 📜 index.html      # Main HTML file
+ ┣ 📜 styles.css      # Styling with Tailwind CSS
+ ┣ 📜 script.js       # JavaScript logic
+ ┣ 📜 README.md       # Project documentation (this file)
 ```
 
-2. Start the development server:
-```bash
-npm start
-```
+## 📌 How to Run
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/yourusername/interactive-file-manager.git
+   ```
+2. Navigate into the project folder:
+   ```sh
+   cd interactive-file-manager
+   ```
+3. Open `index.html` in your browser.
 
-3. Run tests:
-```bash
-npm test
-```
+## 🤖 Learning Outcomes
+- Understanding **p5.js** and how it can be used for UI interactivity.
+- Working with **Tailwind CSS** for modern UI design.
+- Implementing **Drag & Drop**, **Search**, and **Context Menus** in JavaScript.
+- Enhancing accessibility and responsiveness in web applications.
 
-## Components
-- File Manager with ARIA roles
-- Project List View with accessibility features
-- User Account Settings with screen reader support
+## ❗ Disclaimer
+This is **not** a fully functional file manager. It is intended purely for **learning purposes** and to **experiment with p5.js**. No actual file operations (upload, delete, etc.) take place.
 
-## Contributing
-This project is designed to help make accessibility testing more approachable for p5.js Editor contributors.
+## 📜 License
+This project is open-source and available under the **MIT License**.
+
+## 👤 Author
+**Yashodip More**  
+🔗 [GitHub](https://github.com/yashodipmore) | [LinkedIn](https://www.linkedin.com/in/yashodipmore22/)  
