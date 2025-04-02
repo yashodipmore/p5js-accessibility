@@ -48,8 +48,6 @@ This mini-project is designed to explore and experiment with **p5.js** while und
 ## ❗ Disclaimer
 This is **not** a fully functional file manager. It is intended purely for **learning purposes** and to **experiment with p5.js**. No actual file operations (upload, delete, etc.) take place.
 
-## 📜 License
-This project is open-source and available under the **MIT License**.
 
 ## 👤 Author
 **Yashodip More**  
